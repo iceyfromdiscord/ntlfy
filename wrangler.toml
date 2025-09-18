@@ -1,0 +1,9 @@
+name = "ntlfy-worker"
+main = "index.js"
+compatibility_date = "2025-09-18"
+type = "javascript"
+
+[build]
+command = "npm install"
+cwd = "."
+watch_dir = "."
